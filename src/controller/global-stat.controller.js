@@ -8,7 +8,7 @@ async function getAll(req, res){
 
 async function insertOrUpdate(req, res){
 	const { cc, data } = req.body;
-	if(!cc || !date){
+	if(!cc || !data){
 		res.status(400).json({ error: 'cc and date are required' });
 		return;
 	}
