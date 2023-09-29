@@ -15,7 +15,7 @@ class SheetDownloader {
 	 */
 	async downloadToJson(spreadsheetId, sheetName, filePath = null) {
 		//명시한 시트의 내용을 가져옵니다.
-		const res = await this.apiClient.spreadsheetId.values.get({
+		const res = await this.apiClient.spreadsheets.values.get({
 			spreadsheetId: spreadsheetId,
 			range: sheetName
 		});
@@ -66,3 +66,5 @@ class SheetDownloader {
 		});
 	}
 }
+
+module.exports = SheetDownloader;
