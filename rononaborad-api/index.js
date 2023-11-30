@@ -1,8 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const { sequelize } = require('./src/database');
-const globalStatController = require('./src/controller/global-stat.controller.js');
-const keyValueController = require('./src/controller/key-value.controller.js');
+const { sequelize } = require('./database');
+const globalStatController = require('./controller/global-stat.controller.js');
+const keyValueController = require('./controller/key-value.controller.js');
 
 async function launchServer() {
 
