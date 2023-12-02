@@ -1,5 +1,4 @@
 import React from "react";
-import Silde from "../components/slide";
 import Slide from "../components/slide";
 
 function SinglePage({ pageContext }) {
